@@ -41,3 +41,18 @@ export const LAKE_TRUTHS = [
   { type: "Most Likely To", text: "Who's most likely to befriend the lake's resident goose?" },
   { type: "Most Likely To", text: "Who's most likely to 'just check work email' on vacation?" },
 ];
+
+// Would You Rather: Unhinged — chronically-online dilemmas. Read both, everyone votes.
+export const WOULD_YOU_RATHER = [
+  // Deck content is served from outside this repository.
+];
+
+// Red Flag / Green Flag — read a trait aloud, group debates and shouts the verdict.
+export const RED_GREEN = [
+  // Deck content is served from outside this repository.
+];
+
+// Most Likely To — used by Emergency Meeting (voting game).
+export const MOST_LIKELY = [
+  // Deck content is served from outside this repository.
+];
