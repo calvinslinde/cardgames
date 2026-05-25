@@ -56,3 +56,9 @@ export const RED_GREEN = [
 export const MOST_LIKELY = [
   // Deck content is served from outside this repository.
 ];
+
+// Rizz Roulette — the unhinged, brain-rot party mode. Draw a card and do the thing:
+// deliver the rizz, spill the confession, commit to the dare, or defend the hot take.
+export const RIZZ_ROULETTE = [
+  // Deck content is served from outside this repository.
+];
