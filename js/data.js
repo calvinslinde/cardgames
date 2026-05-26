@@ -272,9 +272,10 @@ export const RIZZ_ROULETTE = [
 ];
 
 /* ============================================================
- * CARDS AGAINST THE FAMILY — wholesome, silly, cabin-themed.
+ * CARDS AGAINST THE FAMILY — edgy, silly, family-friction PG-13.
  * ============================================================ */
 export const FAMILY_PROMPTS = [
+  // --- Silly / Cozy ---
   { text: "Mom's secret ingredient in her award-winning campfire chili is actually _.", pick: 1 },
   { text: "Dad spent six hours in the hardware store looking for the perfect _.", pick: 1 },
   { text: "What is secretly hiding under the back seat of the family minivan?", pick: 1 },
@@ -291,7 +292,22 @@ export const FAMILY_PROMPTS = [
   { text: "The ultimate campfire s'more contains two graham crackers, a toasted marshmallow, and a slice of _.", pick: 1 },
   { text: "What did the fisherman accidentally reel in instead of a trout?", pick: 1 },
   { text: "My sibling got grounded for a week because they tried to feed the raccoons _.", pick: 1 },
-  { text: "What is the secret cabin rule that nobody actually follows?", pick: 1 }
+  { text: "What is the secret cabin rule that nobody actually follows?", pick: 1 },
+
+  // --- Edgy PG-13 Family Friction / Roasts ---
+  { text: "My sibling was grounded for two weeks after mom found _ hidden under their bed.", pick: 1 },
+  { text: "I knew my brother was lying about cleaning his room because I found _ in his closet.", pick: 1 },
+  { text: "Nothing ruins a peaceful family road trip faster than dad threatening to turn the car around because of _.", pick: 1 },
+  { text: "What is the real reason why my sister has been locked in the bathroom for three hours?", pick: 1 },
+  { text: "Chore evasion is an art. My sibling's ultimate masterpiece was avoiding unloading the dishwasher by pretending to suffer from _.", pick: 1 },
+  { text: "Why does the family dog secretly love my sibling more than me?", pick: 1 },
+  { text: "Mom's strict kitchen rules are getting out of hand. Yesterday she literally banned _.", pick: 1 },
+  { text: "What is secretly inside mom's locked 'secret stash' drawer in the kitchen?", pick: 1 },
+  { text: "Dad's famous 'special recipe' barbecue is just normal burgers covered in _.", pick: 1 },
+  { text: "I managed to escape setting the dinner table by creating a massive distraction involving _.", pick: 1 },
+  { text: "The family group chat got completely silent after dad confidently messaged a photo of _.", pick: 1 },
+  { text: "My sibling's search history is completely filled with _ and _.", pick: 2 },
+  { text: "To survive a 10-hour family road trip, you need a high-tolerance for _ and a massive supply of _.", pick: 2 }
 ];
 
 export const FAMILY_RESPONSES = [
@@ -328,5 +344,41 @@ export const FAMILY_RESPONSES = [
   "a tree branch that looks exactly like a dinosaur",
   "getting a marshmallow stuck to my forehead",
   "an entire day spent entirely in wet swimsuits",
-  "a very ambitious beaver with a tiny hardhat"
+  "a very ambitious beaver with a tiny hardhat",
+
+  // --- Edgy PG-13 Family Additions ---
+  "mom's highly classified snack stash",
+  "a deeply concerning, unwashed heap of gym clothes",
+  "my sibling's questionable browser history",
+  "accidentally calling the teacher 'Mom'",
+  "chore evasion tactics that actually worked",
+  "pretending to be asleep to avoid unloading the dishwasher",
+  "an incredibly dramatic teenage tantrum",
+  "wearing the same socks for four days straight",
+  "blaming the dog for a mysterious smell in the living room",
+  "my sister's 10-hour beauty routine",
+  "dad trying to use modern slang and failing miserably",
+  "the terrifying moment mom calls you by your full middle name",
+  "stealing my sibling's phone charger out of their wall",
+  "doing the absolute bare minimum to clean my room",
+  "blaming my sibling for the dent in the minivan",
+  "dad's absolute worst cooking disaster",
+  "an hour-long lecture about leaving the lights on",
+  "getting caught eating shredded cheese directly from the bag at 2 a.m.",
+  "trying to explain why my chore checklist isn't actually completed",
+  "pretending to lose the TV remote to hide it from my sibling"
+];
+
+/* ============================================================
+ * SIBLING RIVALRY — PG-13 edgy dares, roasts, and dilemmas.
+ * ============================================================ */
+export const SIBLING_RIVALRY = [
+  // Deck content is served from outside this repository.
+];
+
+/* ============================================================
+ * FAMILY ROASTS — PG-13 campfire truths, dares, and roasts.
+ * ============================================================ */
+export const FAMILY_ROASTS = [
+  // Deck content is served from outside this repository.
 ];
