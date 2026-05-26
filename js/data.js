@@ -204,17 +204,17 @@ export const NORMAL_RESPONSES = [
   "accidentally starting an intense feud with a 12-year-old on Roblox",
   "my toxic trait of thinking I could land a commercial airliner in an emergency",
   "a microwave that heats only the outside of the bowl and leaves the food ice-cold",
-  "slowly realizing I am the least successful member of my family reunion",
+  "faking my own death to avoid attending the family reunion",
   "a strongly worded email from the local lake homeowners association",
   "throwing the entire Monopoly board into the bonfire out of pure spite",
-  "trying to explain what a PDF is to a very angry grandfather",
+  "telling a toddler that Santa Claus is just a victim of late-stage capitalism",
   "an inflatable flamingo that is slowly and ominously deflating",
   "pretending to know how to start the boat while sweating through my shirt",
   "a cooler that was left unplugged in the summer heat for three days",
-  "accidentally letting the neighboring raccoon take over the kitchen",
+  "quietly planning my escape from the conversation while making direct eye contact",
   "the precise moment I realized there is no Wi-Fi at this cabin",
   "arguing with a Canadian goose over who owns the dock",
-  "the overwhelming, crushing weight of corporate existence",
+  "being entirely held together by caffeine, raw spite, and a cheap phone charger",
 ];
 
 /* ============================================================
