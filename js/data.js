@@ -363,10 +363,9 @@ export const FAMILY_RESPONSES = [
   "doing the absolute bare minimum to clean my room"
 ];
 
-export const SIBLING_RIVALRY = [
+export const CAMPFIRE_ROASTS = [
   // Deck content is served from outside this repository.
 ];
 
-export const FAMILY_ROASTS = [
-  // Deck content is served from outside this repository.
-];
+export const SIBLING_RIVALRY = CAMPFIRE_ROASTS;
+export const FAMILY_ROASTS = CAMPFIRE_ROASTS;
