@@ -369,16 +369,10 @@ export const FAMILY_RESPONSES = [
   "pretending to lose the TV remote to hide it from my sibling"
 ];
 
-/* ============================================================
- * SIBLING RIVALRY — PG-13 edgy dares, roasts, and dilemmas.
- * ============================================================ */
 export const SIBLING_RIVALRY = [
   // Deck content is served from outside this repository.
 ];
 
-/* ============================================================
- * FAMILY ROASTS — PG-13 campfire truths, dares, and roasts.
- * ============================================================ */
 export const FAMILY_ROASTS = [
   // Deck content is served from outside this repository.
 ];
