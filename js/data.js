@@ -27,8 +27,8 @@ export const RESPONSES = [
 
 export const NORMAL_PROMPTS = [
   // --- Pick One ---
-  { text: `My sleep paralysis demon showed up, took one look at ${BLANK}, and left out of respect.`, pick: 1 },
-  { text: `I don't have a personality anymore. I just have ${BLANK} and unresolved trauma.`, pick: 1 },
+  { text: `My local HOA president showed up, took one look at ${BLANK}, and left out of respect.`, pick: 1 },
+  { text: `I don't have a personality anymore. I just have ${BLANK} and a sensible pair of slacks.`, pick: 1 },
   { text: `Breaking: local man's entire bloodline ended by ${BLANK}.`, pick: 1 },
   { text: `My toxic trait is genuinely believing I can fix ${BLANK}.`, pick: 1 },
   { text: `The group chat has been eerily quiet ever since I sent ${BLANK}.`, pick: 1 },
@@ -83,7 +83,7 @@ export const NORMAL_PROMPTS = [
   { text: `My dating profile just reads: "into ${BLANK}, violently allergic to ${BLANK}."`, pick: 2 },
   { text: `The group project collapsed because Kevin brought ${BLANK} instead of ${BLANK}.`, pick: 2 },
   { text: `Evolution blessed me with ${BLANK} but cruelly denied me ${BLANK}.`, pick: 2 },
-  { text: `The séance summoned ${BLANK}, which immediately demanded ${BLANK}.`, pick: 2 },
+  { text: `The neighborhood council meeting approved ${BLANK}, which immediately demanded ${BLANK}.`, pick: 2 },
   { text: `My will leaves ${BLANK} to my enemies and ${BLANK} to my cat.`, pick: 2 },
   { text: `The wedding was perfect until the best man's speech brought up ${BLANK} and ${BLANK}.`, pick: 2 },
   { text: `Customs waved me through with ${BLANK} but somehow seized my ${BLANK}.`, pick: 2 },
@@ -198,8 +198,23 @@ export const NORMAL_RESPONSES = [
   "a stack of unopened Amazon boxes holding my dopamine hostage",
   "an unhinged voicemail left at 2 a.m.",
   "a fish that has clearly seen some things",
-  "generational trauma, but make it a personality",
+  "a basic-pitch starter pack containing three different hoodies",
   "the smell of a new car I will never own",
+  "a thermos of lukewarm vegetable soup",
+  "an overhead projector",
+  "the entire population of Denmark",
+  "a balanced breakfast",
+  "active listening",
+  "being a motherfucking sorcerer",
+  "a disappointing birthday party",
+  "a positive attitude",
+  "losing my keys immediately after locking the door",
+  "putting on a warm sweater straight out of the dryer",
+  "the sound of silence",
+  "accidentally copying the teacher on a text",
+  "a microwave that only heats the edges of your plate",
+  "a sensible, mid-sized sedan",
+  "the crushing weight of adulthood",
 ];
 
 /* ============================================================
