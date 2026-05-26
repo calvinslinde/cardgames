@@ -278,7 +278,7 @@ export const FAMILY_PROMPTS = [
   // --- Silly / Cozy ---
   { text: "Mom's secret ingredient in her award-winning campfire chili is actually _.", pick: 1 },
   { text: "Dad spent six hours in the hardware store looking for the perfect _.", pick: 1 },
-  { text: "What is secretly hiding under the back seat of the family minivan?", pick: 1 },
+  { text: "Mom grounded me for two weeks when she found _ hidden in the secret panel of our car.", pick: 1 },
   { text: "Our dog ran away into the woods because he caught a glimpse of _.", pick: 1 },
   { text: "The local park ranger warned us to lock up our coolers because the bears have developed a taste for _.", pick: 1 },
   { text: "My teacher didn't believe me when I told her my homework was destroyed by _.", pick: 1 },
@@ -318,7 +318,7 @@ export const FAMILY_RESPONSES = [
   "wet socks that have been sitting in a bag for three days",
   "an absolute overload of maple syrup",
   "a family board game that ends in an argument",
-  "a raccoon wearing a detective hat",
+  "a sketchy street vendor selling warm, unlabeled energy drinks",
   "accidentally eating a bug while riding a bicycle",
   "dad's cheesy, laugh-at-his-own-jokes humor",
   "an extremely muddy pair of boots",
@@ -344,7 +344,7 @@ export const FAMILY_RESPONSES = [
   "a tree branch that looks exactly like a dinosaur",
   "getting a marshmallow stuck to my forehead",
   "an entire day spent entirely in wet swimsuits",
-  "a very ambitious beaver with a tiny hardhat",
+  "bootleg Elmo in an alleyway surrounded by mysterious cloudy gas",
 
   // --- Edgy PG-13 Family Additions ---
   "mom's highly classified snack stash",
@@ -360,13 +360,7 @@ export const FAMILY_RESPONSES = [
   "dad trying to use modern slang and failing miserably",
   "the terrifying moment mom calls you by your full middle name",
   "stealing my sibling's phone charger out of their wall",
-  "doing the absolute bare minimum to clean my room",
-  "blaming my sibling for the dent in the minivan",
-  "dad's absolute worst cooking disaster",
-  "an hour-long lecture about leaving the lights on",
-  "getting caught eating shredded cheese directly from the bag at 2 a.m.",
-  "trying to explain why my chore checklist isn't actually completed",
-  "pretending to lose the TV remote to hide it from my sibling"
+  "doing the absolute bare minimum to clean my room"
 ];
 
 export const SIBLING_RIVALRY = [
