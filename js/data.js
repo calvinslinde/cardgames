@@ -1,24 +1,22 @@
-// Card data for the Lake House card games.
-// Cards Against Monkeys (sussy) + Cards Against the Cabin (normal): prompts (black) + responses (white).
+// Card data for the card games.
+// Single source of truth for all game decks/pools.
 
-// Blank marker used in prompt text. The UI replaces these with the chosen card(s).
 export const BLANK = "_______";
 export const CUSTOM_CARD_TEXT = "✍️ [Write your own answer...]";
 
 /* ============================================================
- * CARDS AGAINST MONKEYS — the sussy / brain-rot deck.
+ * CARDS AGAINST THE MONKEYS — zesty/suggestive/chronically online.
  * ============================================================ */
 
-// `pick` = how many response cards must be played.
-// Prompts written as questions have no blank and the answer is shown beneath.
 export const PROMPTS = [
   // Deck content is served from outside this repository.
 ];
 
-// Response cards — chronically-online brain-rot answers.
+
 export const RESPONSES = [
   // Deck content is served from outside this repository.
 ];
+
 
 /* ============================================================
  * CARDS AGAINST THE CABIN — the "normal" deck. Same game, broader
@@ -59,28 +57,28 @@ export const NORMAL_PROMPTS = [
   { text: `My personal brand is 90% vibes and 10% ${BLANK}.`, pick: 1 },
   { text: `The Wi-Fi died at the cabin, and within an hour we'd resorted to ${BLANK}.`, pick: 1 },
   { text: `They say money can't buy happiness, but it can buy ${BLANK}, which is close enough.`, pick: 1 },
-  { text: `I lost the family fishing trophy this year because of ${BLANK}.`, pick: 1 },
+  { text: `I lost the annual fishing trophy this year because of ${BLANK}.`, pick: 1 },
   { text: `My last two brain cells are currently fighting to the death over ${BLANK}.`, pick: 1 },
   { text: `What would get me immediately removed from a child's birthday party?`, pick: 1 },
   { text: `The secret ingredient in grandma's award-winning casserole was always ${BLANK}.`, pick: 1 },
   { text: `I peaked in high school, and the only proof left is ${BLANK}.`, pick: 1 },
   { text: `Officer, I can absolutely explain ${BLANK}.`, pick: 1 },
-  { text: `My whole bloodline's curse can be traced directly back to ${BLANK}.`, pick: 1 },
+  { text: `My entire career's collapse can be traced directly back to ${BLANK}.`, pick: 1 },
   { text: `Nobody warned me that adulthood was mostly just ${BLANK}.`, pick: 1 },
-  { text: `The campfire went silent the moment Dad confessed to ${BLANK}.`, pick: 1 },
+  { text: `The family dinner went silent the moment Dad confessed to ${BLANK}.`, pick: 1 },
 
   // --- Pick Two ---
   { text: `My therapist diagnosed me with ${BLANK} and a crippling dependence on ${BLANK}.`, pick: 2 },
-  { text: `The recipe for the perfect lake-house weekend: equal parts ${BLANK} and ${BLANK}.`, pick: 2 },
+  { text: `The recipe for the perfect modern relationship: equal parts ${BLANK} and ${BLANK}.`, pick: 2 },
   { text: `I told her I'm a simple man with simple needs: ${BLANK} and ${BLANK}.`, pick: 2 },
   { text: `Forget fight-or-flight. My nervous system only knows ${BLANK} and ${BLANK}.`, pick: 2 },
   { text: `The situationship started with ${BLANK} and ended, predictably, with ${BLANK}.`, pick: 2 },
   { text: `My two personalities: ${BLANK} in public, and ${BLANK} at 3 a.m.`, pick: 2 },
-  { text: `Heaven is ${BLANK}. Hell is ${BLANK}. I have visited both this week.`, pick: 2 },
+  { text: `Peak productivity is ${BLANK}. Peak procrastination is ${BLANK}. I have experienced both this week.`, pick: 2 },
   { text: `The ick went from 0 to 100 the moment he combined ${BLANK} with ${BLANK}.`, pick: 2 },
   { text: `My entire financial plan is ${BLANK} now and ${BLANK} later.`, pick: 2 },
   { text: `The cult had two rules: never discuss ${BLANK}, and always protect ${BLANK}.`, pick: 2 },
-  { text: `I childproofed the whole cabin but completely forgot about ${BLANK} and ${BLANK}.`, pick: 2 },
+  { text: `I prepared everything for the job interview but completely forgot about ${BLANK} and ${BLANK}.`, pick: 2 },
   { text: `My dating profile just reads: "into ${BLANK}, violently allergic to ${BLANK}."`, pick: 2 },
   { text: `The group project collapsed because Kevin brought ${BLANK} instead of ${BLANK}.`, pick: 2 },
   { text: `Evolution blessed me with ${BLANK} but cruelly denied me ${BLANK}.`, pick: 2 },
@@ -91,77 +89,80 @@ export const NORMAL_PROMPTS = [
   { text: `My morning routine: ${BLANK} before coffee, ${BLANK} before regret.`, pick: 2 },
   { text: `He proposed with ${BLANK} instead of a ring, then followed it up with ${BLANK}.`, pick: 2 },
   { text: `The apocalypse starter pack: ${BLANK}, ${BLANK}, and zero survival skills.`, pick: 2 },
-  { text: `The lake monster surfaced, took ${BLANK}, and left behind only ${BLANK}.`, pick: 2 },
+  { text: `The burglar broke in, took ${BLANK}, and left behind only ${BLANK}.`, pick: 2 },
   { text: `Two things school never taught me: how to do taxes, and how to survive ${BLANK} and ${BLANK}.`, pick: 2 },
   { text: `I manifested ${BLANK}, and the universe sarcastically handed me ${BLANK}.`, pick: 2 },
-  { text: `The campfire confessions spiraled when Aunt Linda admitted to ${BLANK} and ${BLANK}.`, pick: 2 },
+  { text: `The holiday party confessions spiraled when Aunt Linda admitted to ${BLANK} and ${BLANK}.`, pick: 2 },
   { text: `My entire twenties were just ${BLANK} fueled by ${BLANK}.`, pick: 2 },
   { text: `My performance review flagged two "areas for improvement": ${BLANK} and ${BLANK}.`, pick: 2 },
   { text: `The genie granted exactly two wishes: ${BLANK}, and the eternal curse of ${BLANK}.`, pick: 2 },
   { text: `Pro tip: never mix ${BLANK} with ${BLANK} unless you want to end up on a watchlist.`, pick: 2 },
-  { text: `The family reunion split into two camps: team ${BLANK} and team ${BLANK}.`, pick: 2 },
+  { text: `The group retreat split into two camps: team ${BLANK} and team ${BLANK}.`, pick: 2 },
   { text: `My comfort show is just ${BLANK}, and my comfort food is, regrettably, ${BLANK}.`, pick: 2 },
   { text: `He texted "we need to talk" and showed up holding ${BLANK} and ${BLANK}.`, pick: 2 },
   { text: `My entire sleep schedule is held together by ${BLANK} and ${BLANK}.`, pick: 2 },
-  { text: `The boat sank because someone absolutely insisted on bringing ${BLANK} AND ${BLANK}.`, pick: 2 },
+  { text: `The wedding reception was ruined because someone absolutely insisted on bringing ${BLANK} AND ${BLANK}.`, pick: 2 },
   { text: `My personality test came back with two results: ${BLANK} and a deeply concerning amount of ${BLANK}.`, pick: 2 },
   { text: `They erected a statue of me holding ${BLANK} in one hand and ${BLANK} in the other.`, pick: 2 },
   { text: `Step one: ${BLANK}. Step two: ??? Step three: ${BLANK}.`, pick: 2 },
   { text: `The escape room left us two clues: ${BLANK} and ${BLANK}. We are, to this day, still in there.`, pick: 2 },
   { text: `My red flag is ${BLANK}. My green flag is, somehow, also ${BLANK}.`, pick: 2 },
   { text: `The reunion photo was ruined by ${BLANK} and, in the background, ${BLANK}.`, pick: 2 },
+  // Harry Potter themed cards
+  { text: "In my dream Hogwarts dorm room, I would definitely have a shelf filled with ${BLANK}.", pick: 1 },
+  { text: "The Weasleys' home, the Burrow, is famous for its magical stack of ${BLANK}.", pick: 1 },
+  { text: "I opened a Chocolate Frog box and found a legendary card featuring ${BLANK}!", pick: 1 }
 ];
+
 
 export const NORMAL_RESPONSES = [
   "✍️ [Write your own answer...]",
-  // lake-house / cabin flavored
   "a canoe full of regret",
   "the dock where I lost my last shred of dignity",
-  "skinny dipping at the worst possible time",
-  "a deeply cursed s'more",
-  "the lake monster everyone pretends isn't real",
-  "a jet ski I cannot afford and cannot drive",
+  "sending a text message meant for my partner to the work group chat",
+  "a deeply cursed first date that lasted four hours too long",
+  "the office drama that everyone pretends isn't happening",
+  "a designer jacket I bought solely to impress people I dislike",
   "the in-laws arriving two days early",
-  "a screaming loon at 4 a.m.",
-  "an inflatable flamingo with too much attitude",
+  "a crying toddler in the row right behind you on a six-hour flight",
+  "a cat that judges every single one of your life choices",
   "the group chat planning a trip that will never happen",
-  "wet socks for the entire weekend",
-  "a tackle box full of bad decisions",
-  "the one mosquito that ruins everything",
-  "grandma's terrifyingly competitive card-game face",
-  "a cooler containing only mustard",
-  "the bonfire that got slightly out of hand",
-  "a paddleboard yoga influencer",
-  "the cabin's haunted board game",
-  "a fish that maintained eye contact",
-  "the 'fun' family hike from hell",
-  "an overconfident kayak flip",
-  "a sunburn shaped like regret",
-  "the neighbor's suspiciously loud generator",
+  "realizing you wore your shirt inside out during the entire job interview",
+  "a dating history full of highly questionable decisions",
+  "that one coworker who always replies-all to company-wide emails",
+  "your mother's silent, devastating sigh of pure disappointment",
+  "a refrigerator containing only half a lemon and three packets of soy sauce",
+  "a casual office gossip session that got slightly out of hand",
+  "a self-help guru who still lives in their parents' basement",
+  "a group project that is cursed from the very first email",
+  "making intense eye contact with a stranger while eating a banana",
+  "a mandatory corporate team-building exercise on a Saturday morning",
+  "an overconfident reply to a question you did not understand",
+  "a haircut that makes you look like a medieval peasant",
+  "the neighbor's suspiciously loud arguments about who owns the lawn",
   "a raccoon that learned to open the cooler",
-  "the lake water you definitely shouldn't swallow",
-  "an unhinged amount of bug spray",
-  "a dad violently arguing with Google Maps in a dead zone",
-  "a banana boat ride gone deeply wrong",
-  "the campfire story that traumatized the kids",
-  "a dock plank that gives everyone splinters",
-  "the smug confidence of a man with no sunscreen",
-  "a goose with a personal vendetta",
-  "the 'quick' five-hour fishing trip",
-  "an entire weekend of competitive pontoon energy",
-  "the floatie that drifted into the next county",
-  "a suspiciously damp deck of cards",
-  "the s'mores-to-mosquito-bite ratio",
-  "an aggressively patriotic speedboat",
-  "the cabin's single, judgmental cat",
-  "a thermos of unidentifiable lake-house punch",
-  "flipping the Monopoly board directly into the campfire",
-  "a beanbag-toss rivalry that ended a friendship",
-  "the dock cannonball that emptied the lake",
-  "a tan line shaped like a phone",
-  "an emotionally complex pontoon boat",
-  "the kayak that betrayed me",
-  // general / dark / absurd
+  "the suspicious water dripping from the subway ceiling directly onto your face",
+  "an unhinged amount of perfume to cover up the fact that you didn't shower",
+  "arguing with an automated customer service voice while crying",
+  "a DIY home improvement project gone deeply and expensively wrong",
+  "telling an intensely personal story to a bartender who didn't ask",
+  "a cheap wooden desk chair that slowly destroys your spine",
+  "the smug confidence of a person who has never once been corrected",
+  "a magpie that actively hunts you during your morning run",
+  "a 'quick' phone call with your mother that lasts three hours",
+  "an entire evening of competitive corporate networking energy",
+  "an email draft that was accidentally sent before it was finished",
+  "a suspiciously damp handshake from a potential business partner",
+  "the work-to-salary ratio that makes you want to lie down in traffic",
+  "an aggressively loud phone conversation on public transit",
+  "a highly judgmental roommate who keeps track of your dish-washing habits",
+  "a plastic cup of questionable punch from a house party you weren't invited to",
+  "flipping the dining table during a particularly intense game of Uno",
+  "a minor debate about movie trivia that ended a five-year relationship",
+  "an accidental reply-all email that emptied the entire office",
+  "a tan line that makes you look like a zebra in a swimsuit",
+  "an emotionally complex text message containing only a question mark",
+  "the office printer that only jams when you are in a massive hurry",
   "an aggressively confident wrong answer",
   "raw, unfiltered second-hand embarrassment",
   "a single, devastating left swipe",
@@ -193,180 +194,176 @@ export const NORMAL_RESPONSES = [
   "my entire dignity, sold for clout",
   "a parking spot defended to the death",
   "an inflatable swan with a clear attitude problem",
-  "a cease-and-desist letter from my own mother",
-  "waking up from a 9-hour 'nap' with zero concept of time",
-  "a profound, existential dread cured only by toasted s'mores",
-  "a casserole nobody asked for and everyone fears",
-  "a stack of unopened Amazon boxes holding my dopamine hostage",
-  "an unhinged voicemail left at 2 a.m.",
-  "a fish that has clearly seen some things",
-  "re-staining the deck with my tears",
-  "fake-coughing to cover a campfire sob",
-  "a serial killer's unhinged LinkedIn post",
-  "accidentally feuding with a 12-year-old on Roblox",
-  "thinking I could land a commercial airliner in an emergency",
-  "a microwave that only heats the bowl",
-  "faking my death to avoid the family reunion",
-  "a strongly worded email from the local homeowners association",
-  "throwing the Monopoly board into the bonfire",
-  "explaining late-stage capitalism to a toddler",
-  "an inflatable flamingo that is slowly and ominously deflating",
-  "pretending to know how to start the boat while sweating through my shirt",
-  "a cooler that was left unplugged in the summer heat for three days",
-  "planning my escape during direct eye contact",
-  "the precise moment I realized there is no Wi-Fi at this cabin",
-  "arguing with a Canadian goose over who owns the dock",
-  "being held together by caffeine, spite, and phone chargers",
+  // Harry Potter themed cards
+  "A beautiful, golden chocolate frog that successfully escapes right out the train window",
+  "A hand-knitted Weasley sweater that is three sizes too big for you",
+  "A fresh, sparkling glass of sweet Butterbeer served in a frosty wooden mug"
 ];
+
 
 /* ============================================================
  * Bonus games
  * ============================================================ */
 
-// Bonus deck: "Lake House Truths" — cozy + chaotic prompts to read aloud and answer.
 export const LAKE_TRUTHS = [
-  { type: "Would You Rather", text: "Would you rather spend the whole weekend with no Wi-Fi, or no hot water?" },
+  { type: "Would You Rather", text: "Would you rather have all your text messages printed and mailed to your parents, or have your search history posted on your LinkedIn?" },
   { type: "Would You Rather", text: "Would you rather fall off the dock fully clothed, or get caught singing to yourself in the kayak?" },
-  { type: "Would You Rather", text: "Would you rather share a bunk bed with a snorer, or a sleep-talker who narrates dreams?" },
-  { type: "Would You Rather", text: "Would you rather always be the one who packs the snacks, or always be the one who drives?" },
-  { type: "Would You Rather", text: "Would you rather swim across the whole lake, or run the entire shoreline trail?" },
-  { type: "Would You Rather", text: "Would you rather win every card game but lose every fishing contest, or vice versa?" },
+  { type: "Would You Rather", text: "Would you rather work for a boss who calls you 'champ' or a boss who signs emails with 'warm regards' during an argument?" },
+  { type: "Would You Rather", text: "Would you rather always be 15 minutes late to every appointment, or always 45 minutes early?" },
+  { type: "Would You Rather", text: "Would you rather have your crush see you trip over a flat surface, or accidentally send a screenshot to the person who sent it to you?" },
+  { type: "Would You Rather", text: "Would you rather win a million dollars but never be allowed to travel outside your home state, or travel the world forever but always be broke?" },
   { type: "Never Have I Ever", text: "Never have I ever capsized a canoe on purpose." },
-  { type: "Never Have I Ever", text: "Never have I ever pretended to know how to start the boat." },
-  { type: "Never Have I Ever", text: "Never have I ever eaten a s'more that was 90% marshmallow goo." },
-  { type: "Never Have I Ever", text: "Never have I ever 'accidentally' splashed someone who deserved it." },
-  { type: "Never Have I Ever", text: "Never have I ever lost a flip-flop to the lake forever." },
-  { type: "Truth", text: "What's the most chaotic thing that's ever happened on a family trip?" },
-  { type: "Truth", text: "Who in this group would survive longest stranded on the lake's tiny island?" },
-  { type: "Truth", text: "What's your most embarrassing 'outdoorsy' fail?" },
-  { type: "Truth", text: "If the cabin were haunted, whose fault would it be?" },
+  { type: "Never Have I Ever", text: "Never have I ever pretended to understand a joke that I didn't actually get." },
+  { type: "Never Have I Ever", text: "Never have I ever checked someone's social media profile to see if they're still dating their ex." },
+  { type: "Never Have I Ever", text: "Never have I ever muted a group chat because they were talking about a topic I didn't care about." },
+  { type: "Never Have I Ever", text: "Never have I ever pretended to have emergency plans to escape a terrible first date." },
+  { type: "Truth", text: "What's the most chaotic thing that's ever happened in your family group chat?" },
+  { type: "Truth", text: "Who in this group would be the first to get fired from a corporate job for using too many emojis?" },
+  { type: "Truth", text: "What's the most embarrassing message you've ever sent to a coworker by mistake?" },
+  { type: "Truth", text: "If this entire group got arrested, what would the charges most likely be?" },
   { type: "Dare", text: "Do your best loon call. Loudly. Right now." },
-  { type: "Dare", text: "Narrate the next 60 seconds like a nature documentary." },
-  { type: "Dare", text: "Give a dramatic toast to the lake as if you'll never see it again." },
-  { type: "Dare", text: "Convince everyone you caught a fish 'this big' with a straight face." },
-  { type: "Most Likely To", text: "Who's most likely to fall asleep in the hammock and miss dinner?" },
-  { type: "Most Likely To", text: "Who's most likely to start a competitive feud over a board game?" },
-  { type: "Most Likely To", text: "Who's most likely to befriend the lake's resident goose?" },
-  { type: "Most Likely To", text: "Who's most likely to 'just check work email' on vacation?" },
+  { type: "Dare", text: "Narrate the next 60 seconds as if you are a highly dramatic sports commentator." },
+  { type: "Dare", text: "Give a dramatic, tearful toast to a completely mundane object in this room." },
+  { type: "Dare", text: "Convince everyone in the room of a highly absurd lie about your childhood." },
+  { type: "Most Likely To", text: "Who's most likely to buy something completely useless because a social media ad told them to?" },
+  { type: "Most Likely To", text: "Who's most likely to get into a heated online argument with a complete stranger?" },
+  { type: "Most Likely To", text: "Who's most likely to spend an hour trying to take the perfect photo of their food?" },
+  { type: "Most Likely To", text: "Who's most likely to send a text to their boss complaining about their boss?" }
 ];
 
-// Clean / Cozy cabin-themed Would You Rather cards.
+
 export const COZY_WOULD_YOU_RATHER = [
-  { tag: "Would You Rather", text: "Spend the whole weekend with no Wi-Fi, or no hot water?" },
+  { tag: "Would You Rather", text: "Always have to text using only voice-to-text, or never be allowed to use emojis again?" },
   { tag: "Would You Rather", text: "Fall off the dock fully clothed, or get caught singing to yourself in the kayak?" },
-  { tag: "Would You Rather", text: "Share a bunk bed with a loud snorer, or a sleep-talker who narrates their dreams?" },
-  { tag: "Would You Rather", text: "Always be the one who packs the snacks, or always be the one who drives?" },
-  { tag: "Would You Rather", text: "Swim across the whole lake, or run the entire shoreline trail?" },
-  { tag: "Would You Rather", text: "Win every card game but lose every fishing contest, or vice versa?" },
-  { tag: "Would You Rather", text: "Have a camping tent that has a tiny, constant leak, or have to sleep in the car?" },
-  { tag: "Would You Rather", text: "Only eat burnt campfire hot dogs for a week, or only raw carrots?" },
+  { tag: "Would You Rather", text: "Accidentally call your teacher/boss 'Mom', or send a text about someone to that exact person?" },
+  { tag: "Would You Rather", text: "Always have a warm drink that should be cold, or always have a cold meal that should be hot?" },
+  { tag: "Would You Rather", text: "Only be able to watch your favorite movie once a year, or have to watch a mediocre movie every single week?" },
+  { tag: "Would You Rather", text: "Have to wear formal business attire to sleep every night, or wear pajamas to every major public meeting?" },
+  { tag: "Would You Rather", text: "Have a tiny pebble permanently stuck in your shoe, or have your sleeve wet up to your elbow?" },
+  { tag: "Would You Rather", text: "Have a sneeze that never comes, or have a song stuck in your head that you only know three words of?" },
   { tag: "Would You Rather", text: "Be visited by a very polite black bear, or an army of very rude raccoons?" },
-  { tag: "Would You Rather", text: "Accidentally drop your phone into the outhouse toilet, or drop it into the deep lake?" },
-  { tag: "Would You Rather", text: "Have to paddle a canoe alone with a windy headwind, or carry a heavy cooler up a steep hill?" },
-  { tag: "Would You Rather", text: "Wear a wet swimsuit all day, or wear shoes completely filled with sand?" },
-  { tag: "Would You Rather", text: "Be the designated campfire starter every single night, or the designated dish cleaner?" },
-  { tag: "Would You Rather", text: "Get covered in sticky tree sap, or get bitten by 15 mosquitoes?" },
-  { tag: "Would You Rather", text: "Accidentally splash yourself skip-stone hunting, or slip on a muddy dock?" },
-  { tag: "Would You Rather", text: "Have a resident goose follow you everywhere, or a highly talkative squirrel?" },
+  { tag: "Would You Rather", text: "Accidentally like a five-year-old post on your crush's social media, or accidentally FaceTime them at 3 a.m.?" },
+  { tag: "Would You Rather", text: "Have a group project where nobody else does any work, or do a solo presentation where you forgot your notes?" },
+  { tag: "Would You Rather", text: "Accidentally send an email complaining about your boss to your boss, or reply-all to a company-wide email with a personal secret?" },
+  { tag: "Would You Rather", text: "Have to do a highly enthusiastic presentation on a topic you know absolutely nothing about, or sing karaoke in front of professional musicians?" },
+  { tag: "Would You Rather", text: "Always have your phone battery die at exactly 10%, or always have weak, unstable Wi-Fi that drops every five minutes?" },
+  { tag: "Would You Rather", text: "Only be allowed to listen to music from the year you were born, or only watch TV shows from the 1980s?" },
+  { tag: "Would You Rather", text: "Have your internal thoughts occasionally broadcasted as a quiet voice, or have everyone's thoughts about you visible as subtitles?" },
   { tag: "Would You Rather", text: "Eat a s'more that is 90% charred black soot, or a s'more with completely cold chocolate?" },
-  { tag: "Would You Rather", text: "Listen to someone play a three-chord song on an out-of-tune guitar for 3 hours, or sit in silence in the dark?" },
-  { tag: "Would You Rather", text: "Be the first person to wake up at 5 a.m. to make coffee, or sleep in until noon and miss the boat trip?" },
-  { tag: "Would You Rather", text: "Get stuck on the lake with no paddle, or get stuck in the woods with no map?" },
-  { tag: "Would You Rather", text: "Only communicate in campfire smoke signals for a day, or in loud loon calls?" },
-  { tag: "Would You Rather", text: "Have to wear mismatched, extremely bright neon socks the whole trip, or a floppy giant sun hat?" },
-  { tag: "Would You Rather", text: "Be the champion at backyard cornhole but lose every board game, or vice versa?" },
-  { tag: "Would You Rather", text: "Have a bedroom that smells like wet dog, or a bedroom that smells like burnt wood?" },
-  { tag: "Would You Rather", text: "Accidentally reel in a smelly old boot, or reel in a giant clump of lake weeds after a 20-minute fight?" }
+  { tag: "Would You Rather", text: "Have your sibling narrate your entire dating life to a first date, or have your parents show your baby photos to your boss?" },
+  { tag: "Would You Rather", text: "Only be able to express your emotions through theatrical sighs, or have to shout every third word you speak?" },
+  { tag: "Would You Rather", text: "Have to explain memes to your grandparents for three hours, or explain your career path to a highly skeptical toddler?" },
+  { tag: "Would You Rather", text: "Accidentally reply to a serious email with a highly chaotic meme, or send an auto-correct typo that sounds wildly suggestive to your manager?" },
+  { tag: "Would You Rather", text: "Be completely unable to tell a lie, or have to always speak in rhyme?" },
+  { tag: "Would You Rather", text: "Only eat desserts for a week but with absolutely no sugar, or eat savory meals that are completely unseasoned?" },
+  { tag: "Would You Rather", text: "Have your alarm sound be a recording of your own voice telling you to wake up, or have it be a loud, aggressive air horn?" },
+  { tag: "Would You Rather", text: "Have your sibling borrow your favorite clothes without asking and stain them, or have them tell your most embarrassing childhood story to your crush?" },
+  // Harry Potter themed cards
+  { tag: "Would You Rather", text: "Attend a winter feast in the Great Hall with floating snow, or spend Christmas Eve at the Burrow with the Weasleys?" },
+  { tag: "Would You Rather", text: "Fly on a sleek broomstick through a warm summer sunset, or ride on a friendly Hippogriff over a sparkling forest lake?" },
+  { tag: "Would You Rather", text: "Have a loyal pet owl that delivers handwritten notes, or a fluffy Pygmy Puff that sleeps on your shoulder?" }
 ];
 
-// Clean / Cozy cabin-themed Most Likely To cards.
+
 export const COZY_MOST_LIKELY = [
   "fall asleep in the hammock and miss dinner entirely",
   "start an extremely competitive feud over a simple board game",
   "befriend the lake's resident goose and name it",
-  "secretly check their work email within 10 minutes of arriving",
+  "secretly check their work notifications during a relative's wedding ceremony",
   "burn their marshmallow until it is a charred black coal and eat it anyway",
-  "spend three hours trying to skip the perfect stone",
-  "worry about a bear invasion after hearing a tiny pinecone fall",
-  "pack enough clothes for a six-month expedition for a weekend trip",
-  "insist on driving the boat but immediately get stuck in the weeds",
-  "accidentally drop their sunglasses into the deepest part of the lake",
-  "wear their swimsuit inside out half the day without realizing",
-  "get completely lost walking on a clearly marked nature trail",
-  "spend the entire day reading on the porch and accomplish nothing else",
-  "accidentally splash the entire dock while attempting a cannonball jump",
-  "bring a highly elaborate, multi-step gourmet recipe to a simple cabin kitchen",
-  "complain about the lack of air conditioning within five minutes",
-  "get caught secretly stealing the last premium chocolate bar from the s'mores bag",
-  "take a 2-hour nap in the afternoon and complain they are still frustrated",
-  "insist on waking up at 5 a.m. to see the misty lake sunrise alone",
-  "try to start the campfire using a highly complex and unnecessary technique",
-  "wear a giant, floppy sun hat that constantly gets blown into the water",
-  "get a minor sunburn on their nose because they refused to wear sunscreen",
-  "try to catch a frog with their bare hands and slip in the mud",
-  "pack only salty snacks and completely forget to bring drinking water",
-  "be the one who suggests playing just one more card game at 2 a.m."
+  "spend three hours trying to organize their phone apps by color",
+  "worry that they left the stove on after traveling three hours away",
+  "pack four extra outfits for a quick trip to the local grocery store",
+  "insist on giving directions but end up getting everyone completely lost",
+  "accidentally drop their phone screen-down onto a concrete floor while showing off a new case",
+  "wear their shirt inside out or backwards through a long, serious meeting",
+  "get completely lost inside a moderately sized suburban grocery store",
+  "spend the entire day scrolling through a streaming service catalog and never actually watch a movie",
+  "accidentally trip on a flat surface while trying to look cool in front of their crush",
+  "bring a highly elaborate, multi-step presentation to a simple casual team catch-up",
+  "complain about the room temperature when it's exactly 72 degrees",
+  "get caught secretly eating the last slice of shared pizza from the box",
+  "take a three-hour nap in the afternoon and complain they have no time to do anything",
+  "insist on waking up at 5 a.m. to go to the gym but just end up scrolling on their phone in bed",
+  "try to explain a simple concept using a highly complex, unnecessary corporate jargon",
+  "wear a highly impractical outfit to a casual event just for the photos",
+  "get extremely sore after doing a single, gentle 10-minute stretch routine",
+  "try to repair a simple household appliance themselves and end up breaking it completely",
+  "forget the one essential item they were specifically asked to bring to the party",
+  "be the one who suggests 'one more episode' when it's already 3 a.m.",
+  // Harry Potter themed cards
+  "fall asleep in the Hogwarts library under a massive pile of spellbooks",
+  "accidentally transfigure their homework paper into a highly adorable baby cat",
+  "spend all their Galleons buying sweet chocolate frogs and sugar quills at Honeydukes"
 ];
 
-// Clean / Cozy cabin-themed Red Flag / Green Flag traits.
+
 export const COZY_RED_GREEN = [
-  { tag: "Red or Green?", text: "They pack extra dry socks for everyone else on the hiking trip." },
-  { tag: "Red or Green?", text: "Refuses to eat campfire food unless they can cover it in hot sauce." },
+  { tag: "Red or Green?", text: "They pack extra phone chargers of every type for everyone else on the trip." },
+  { tag: "Red or Green?", text: "Refuses to eat any meal unless they can take a picture of it first." },
   { tag: "Red or Green?", text: "Checks their work email on their phone while sitting in a kayak." },
-  { tag: "Red or Green?", text: "Takes a 45-minute hot shower when there is a queue of 6 people." },
-  { tag: "Red or Green?", text: "Wakes up at 5:30 a.m. and starts grinding fresh coffee beans loudly." },
+  { tag: "Red or Green?", text: "Takes a 45-minute hot shower when everyone is waiting to brush their teeth." },
+  { tag: "Red or Green?", text: "Wakes up at 5:30 a.m. and starts vacuuming the living room loudly." },
   { tag: "Red or Green?", text: "Doesn't wave back to other boaters passing on the lake." },
-  { tag: "Red or Green?", text: "Claims they 'know a shortcut' that adds three hours to the drive." },
-  { tag: "Red or Green?", text: "Packs three suitcases for a two-night stay at a rustic cabin." },
-  { tag: "Red or Green?", text: "Steals the perfect, slowly toasted marshmallow from your stick." },
-  { tag: "Red or Green?", text: "Spends the entire weekend playing games on their phone by the lake." },
-  { tag: "Red or Green?", text: "Insists on singing campfire songs completely out of tune." },
-  { tag: "Red or Green?", text: "Has a highly specific comfort spot on the porch and gets annoyed if you sit there." },
-  { tag: "Red or Green?", text: "Brings a cooler filled with nothing but high-end fancy cheeses." },
-  { tag: "Red or Green?", text: "Knows the exact scientific names of all the local birds and trees." },
-  { tag: "Red or Green?", text: "Volunteers to wash all the greasy dinner dishes without being asked." },
-  { tag: "Red or Green?", text: "Refuses to wear bug spray and complains about mosquitoes for three days." },
-  { tag: "Red or Green?", text: "Brings three different board games but refuses to play anyone else's choice." },
-  { tag: "Red or Green?", text: "Is extremely competitive during a casual backyard game of cornhole." },
-  { tag: "Red or Green?", text: "Leaves their wet towel crumpled on the bathroom floor instead of hanging it." },
-  { tag: "Red or Green?", text: "Always suggests going stargazing at 1 a.m. but falls asleep in 5 minutes." },
-  { tag: "Red or Green?", text: "Pretends to be asleep when the car arrives so they don't have to carry bags." },
+  { tag: "Red or Green?", text: "Claims they 'know a shortcut' that gets everyone completely lost in a dead zone." },
+  { tag: "Red or Green?", text: "Packs three suitcases for a simple weekend overnight stay at a friend's place." },
+  { tag: "Red or Green?", text: "Steals the last french fry from your plate without asking." },
+  { tag: "Red or Green?", text: "Spends the entire party texting other people on their phone." },
+  { tag: "Red or Green?", text: "Insists on singing karaoke songs completely out of tune with maximum passion." },
+  { tag: "Red or Green?", text: "Has a highly specific favorite spot on the couch and gets visibly annoyed if anyone else sits there." },
+  { tag: "Red or Green?", text: "Brings a platter filled with nothing but high-end, extremely expensive chocolate truffles." },
+  { tag: "Red or Green?", text: "Knows the exact release years and trivia of every single movie you mention." },
+  { tag: "Red or Green?", text: "Volunteers to pay for the group's entire dinner bill without being asked." },
+  { tag: "Red or Green?", text: "Refuses to wear a jacket and complains about being cold all night." },
+  { tag: "Red or Green?", text: "Brings three different movie suggestions but refuses to watch anyone else's choice." },
+  { tag: "Red or Green?", text: "Is extremely competitive during a casual friendly game of trivia." },
+  { tag: "Red or Green?", text: "Leaves their dirty coffee mugs scattered all over the living room table." },
+  { tag: "Red or Green?", text: "Always suggests starting a new TV show at midnight but falls asleep in 5 minutes." },
+  { tag: "Red or Green?", text: "Pretends to be busy when the food delivery arrives so they don't have to pay." },
   { tag: "Red or Green?", text: "Can start a blazing campfire in the pouring rain using a single match." },
-  { tag: "Red or Green?", text: "Calls a small harmless spider in the bedroom an 'absolute emergency'." },
-  { tag: "Red or Green?", text: "Insists on sleeping in the hammock overnight and complains about a stiff neck." },
-  { tag: "Red or Green?", text: "Remembers to bring the extra long s'mores sticks so nobody burns their hands." }
+  { tag: "Red or Green?", text: "Calls a tiny, harmless bug in the kitchen an 'absolute household emergency'." },
+  { tag: "Red or Green?", text: "Insists on sleeping on the floor and complains about a sore back all next day." },
+  { tag: "Red or Green?", text: "Remembers to bring the extra long s'mores sticks so nobody burns their hands." },
+  // Harry Potter themed cards
+  { tag: "Red or Green?", text: "They hand-knit a custom Weasley sweater for your pet cat." },
+  { tag: "Red or Green?", text: "They insist on sorting every single snack in the pantry by Hogwarts house colors." },
+  { tag: "Red or Green?", text: "They unironically claim that Hufflepuff is the absolute coolest house at Hogwarts." }
 ];
 
-// Clean / Cozy cabin-themed Roast Me prompts.
+
 export const COZY_CAMPFIRE_ROASTS = [
   { tag: "Roast", text: "Point at the person who looks like they still sleep with a nightlight because of 'creepy cabin sounds'." },
   { tag: "Roast", text: "Which player is absolutely incapable of starting a campfire without using a whole bottle of lighter fluid?" },
-  { tag: "Roast", text: "Point at the person who has a special, high-pitched voice they only use when talking to dogs or chipmunks." },
-  { tag: "Roast", text: "Which player would get completely lost inside a moderately sized grocery store?" },
-  { tag: "Roast", text: "Point at the player who behaves like a grumpy grizzly bear who missed their winter hibernation." },
-  { tag: "Roast", text: "Who in this room has the absolute worst posture when sitting in a hammock?" },
-  { tag: "Roast", text: "Point at the person who is most likely to get highly competitive and ruin a friendly family board game." },
-  { tag: "Roast", text: "Which player would be the absolute first to get eaten if a bear wandered onto the porch?" },
-  { tag: "Roast", text: "Point at the person who packs enough gear for a polar expedition just to go on a 20-minute nature walk." },
+  { tag: "Roast", text: "Point at the person who has a highly artificial 'customer service voice' they use on the phone." },
+  { tag: "Roast", text: "Which player would get completely overwhelmed trying to assemble a basic flat-pack bookcase?" },
+  { tag: "Roast", text: "Point at the player who behaves like a grumpy toddler if they don't get their afternoon coffee." },
+  { tag: "Roast", text: "Who in this room has the absolute worst posture when sitting at their office desk?" },
+  { tag: "Roast", text: "Point at the person who is most likely to take a casual game of trivia way too seriously." },
+  { tag: "Roast", text: "Which player would be the absolute first to get scammed by an obvious online 'free gift' popup?" },
+  { tag: "Roast", text: "Point at the person who brings a massive, oversized backpack for a simple 2-hour outing." },
   { tag: "Roast", text: "Who in this room has a laugh that sounds exactly like a startled loon on the lake?" },
-  { tag: "Roast", text: "Point at the player who is most likely to secretly eat the last chocolate bar from the s'mores supply." },
-  { tag: "Roast", text: "Which player looks like they still don't know how to properly skip a stone on the water?" },
-  { tag: "Roast", text: "Point at the person who takes a 2-hour afternoon nap and then complains they are too tired to help make dinner." },
-  { tag: "Roast", text: "Which player is most likely to get a severe sunburn on their nose because they were too stubborn for sunscreen?" },
-  { tag: "Roast", text: "Point at the player whose room is a disaster zone of wet towels and sandy shoes." },
-  { tag: "Roast", text: "Who in this room would spend two hours trying to catch a small frog, only to slip and fall in the mud?" },
-  { tag: "Roast", text: "Point at the person who is most likely to check their work email while sitting in a kayak." },
-  { tag: "Roast", text: "Which player is the absolute worst at steering a canoe, constantly going in circles?" },
-  { tag: "Roast", text: "Point at the player who gets completely terrified by a harmless tiny spider in the bathroom." },
-  { tag: "Roast", text: "Who in this room is most likely to fall asleep in a deck chair and get a highly awkward sun tan line?" },
-  { tag: "Roast", text: "Point at the person who always complains the cabin is 'too cold' and then 'too hot' within ten minutes." },
-  { tag: "Roast", text: "Which player is most likely to suggest playing just one more card game at 2 a.m. when everyone else is half-asleep?" },
-  { tag: "Roast", text: "Point at the person who looks like they would get startled by their own shadow on the cabin wall." },
-  { tag: "Roast", text: "Which player is most likely to accidentally drop their expensive phone directly into the lake while trying to take a selfie?" },
-  { tag: "Roast", text: "Point at the player who behaves like they are the king of the cabin but doesn't actually know how to wash a single dish." }
+  { tag: "Roast", text: "Point at the player who is most likely to secretly eat the last slice of pizza without asking." },
+  { tag: "Roast", text: "Which player looks like they still don't know how to properly boil an egg without checking a recipe?" },
+  { tag: "Roast", text: "Point at the person who takes a 3-hour afternoon nap and then complains they have too much work to do." },
+  { tag: "Roast", text: "Which player is most likely to get extremely sore muscles from just sitting on the couch too long?" },
+  { tag: "Roast", text: "Point at the player whose bedroom is a disaster zone of half-empty water cups and dirty laundry." },
+  { tag: "Roast", text: "Who in this room would spend two hours trying to find a movie to watch, only to fall asleep five minutes in?" },
+  { tag: "Roast", text: "Point at the person who is most likely to check their work notifications during a romantic dinner." },
+  { tag: "Roast", text: "Which player is the absolute worst at giving directions, constantly telling you to turn the wrong way?" },
+  { tag: "Roast", text: "Point at the player who gets completely terrified by an unknown phone number calling them." },
+  { tag: "Roast", text: "Who in this room is most likely to trip over their own feet on a perfectly flat surface?" },
+  { tag: "Roast", text: "Point at the person who always complains about the thermostat setting in any building." },
+  { tag: "Roast", text: "Which player is most likely to suggest 'just one more episode' when it's already 3 a.m.?" },
+  { tag: "Roast", text: "Point at the person who looks like they would get startled by a toaster popping." },
+  { tag: "Roast", text: "Which player is most likely to accidentally drop their phone directly into their food while trying to take a picture of it?" },
+  { tag: "Roast", text: "Point at the player who behaves like a gourmet chef but doesn't actually know how to cook a simple pasta dish." },
+  // Harry Potter themed cards
+  { tag: "Roast", text: "Roast the player to your right by comparing their hairstyle to Hagrid's tangled beard after a windy Quidditch match." },
+  { tag: "Roast", text: "Roast yourself by admitting which basic, entry-level Hogwarts spell you would completely fail to cast." },
+  { tag: "Roast", text: "Roast the person to your left—claim their bedroom looks exactly like Filch's disorganized office." }
 ];
 
-// Clean / Cozy cabin-themed Truth or Dare deck.
+
 export const COZY_TRUTHS_DARES = [
   // --- TRUTHS ---
   { tag: "Truth", text: "What is your secret comfort food that you only eat when nobody is looking?" },
@@ -384,7 +381,7 @@ export const COZY_TRUTHS_DARES = [
   { tag: "Truth", text: "Who in this room is the absolute worst driver?" },
   { tag: "Truth", text: "What is a secret purchase you made recently that you haven't told anyone about?" },
   { tag: "Truth", text: "What is the longest you have ever gone without showering on a camping trip?" },
-  { tag: "Truth", text: "If you were a ghost, which room in this house would you haunt and why?" },
+  { tag: "Truth", text: "If you could hide in any secret room in this house for a day, which one would you choose and why?" },
   { tag: "Truth", text: "What is the most embarrassing song on your playlist that you secretly love?" },
   { tag: "Truth", text: "Have you ever lied about your age to get a discount or entry somewhere?" },
   { tag: "Truth", text: "What is the most ridiculous excuse you've ever used to get out of plans?" },
@@ -392,14 +389,14 @@ export const COZY_TRUTHS_DARES = [
   { tag: "Truth", text: "What is the most childish thing you still do on a regular basis?" },
   { tag: "Truth", text: "What's the most chaotic thing that's ever happened on a family trip?" },
   { tag: "Truth", text: "Who in this group would survive longest stranded on the lake's tiny island?" },
-  { tag: "Truth", text: "What's your most embarrassing 'outdoorsy' fail?" },
-  { tag: "Truth", text: "If the cabin were haunted, whose fault would it be?" },
+  { tag: "Truth", text: "What is your most embarrassing dating fail that still keeps you awake at night?" },
+  { tag: "Truth", text: "If this group chat was leaked, whose career or reputation would be ruined first?" },
 
   // --- DARES ---
   { tag: "Dare", text: "Do your best loon call. Loudly. Right now." },
-  { tag: "Dare", text: "Narrate the next 60 seconds like a nature documentary." },
-  { tag: "Dare", text: "Give a dramatic toast to the lake as if you'll never see it again." },
-  { tag: "Dare", text: "Convince everyone you caught a fish 'this big' with a straight face." },
+  { tag: "Dare", text: "Narrate the next 60 seconds as if you are a highly dramatic chef detailing a complex culinary masterpiece." },
+  { tag: "Dare", text: "Give a dramatic toast to your phone as if you're parting ways forever." },
+  { tag: "Dare", text: "Convince everyone that you are actually a distant relative of royalty with a straight face." },
   { tag: "Dare", text: "Try to balance a clean spoon on your nose for 15 seconds." },
   { tag: "Dare", text: "Perform a 30-second dramatic slow-motion replay of a clumsy moment." },
   { tag: "Dare", text: "Speak only in an enthusiastic radio host voice until your next turn." },
@@ -408,85 +405,91 @@ export const COZY_TRUTHS_DARES = [
   { tag: "Dare", text: "Stare at the person across from you and try to explain a complex hobby in 20 seconds without laughing or blinking." },
   { tag: "Dare", text: "Do your absolute best impression of another player's signature laugh." },
   { tag: "Dare", text: "Balance a water bottle on your head and walk in a circle without it falling." },
-  { tag: "Dare", text: "Do a 20-second interpretive dance about a kayak trip that goes horribly wrong." },
+  { tag: "Dare", text: "Do a 20-second interpretive dance about trying to find your lost phone in a panic." },
   { tag: "Dare", text: "Try to make the person to your right laugh in 30 seconds using only funny faces." },
   { tag: "Dare", text: "Give a 30-second passionate speech about why gas station snacks are gourmet food." },
-  { tag: "Dare", text: "Sing the chorus of your favorite song, but substitute every noun with the word 'canoe'." },
-  { tag: "Dare", text: "Do a 15-second plank while listing 5 things you love about the lake house." },
+  { tag: "Dare", text: "Sing the chorus of your favorite song, but substitute every noun with the word 'pizza'." },
+  { tag: "Dare", text: "Do a 15-second plank while listing 5 things you would do if you won the lottery tomorrow." },
   { tag: "Dare", text: "Stand on one foot with your eyes closed for 25 seconds without falling." },
   { tag: "Dare", text: "Draw a tiny, goofy mustache on your finger with a pen and keep it there for the rest of the game." },
   { tag: "Dare", text: "Try to recite the alphabet backward in 15 seconds. If you fail, do 5 jumping jacks." },
-  { tag: "Dare", text: "Act like a sleepy bear who just woke up from hibernation until your next turn." },
+  { tag: "Dare", text: "Act like a highly caffeinated corporate worker who has had 6 shots of espresso until your next turn." },
   { tag: "Dare", text: "High-five everyone in the room, but you must do it in extreme slow motion." },
   { tag: "Dare", text: "Try to balance a coaster on your chin for 10 seconds." },
   { tag: "Dare", text: "Do your best impression of a campfire crackling and popping dramatically." },
-  { tag: "Dare", text: "Whisper all your responses until your next turn as if you are sharing a highly confidential secret." }
+  { tag: "Dare", text: "Whisper all your responses until your next turn as if you are sharing a highly confidential secret." },
+  // Harry Potter themed cards
+  { tag: "Truth", text: "If you could have any magical pet from Hogwarts, which one would you choose and what cute name would you give it?" },
+  { tag: "Truth", text: "Which Hogwarts house do you think you belong in, and what trait of that house do you possess most?" },
+  { tag: "Truth", text: "If you had a cup of Felix Felicis golden luck potion, what simple goal would you hope to succeed at today?" }
 ];
 
-// Zesty / Suggestive adult-themed Truth or Dare deck.
+
 export const ZESTY_TRUTHS_DARES = [
   // Deck content is served from outside this repository.
 ];
 
-// Would You Rather: Unhinged — chronically-online dilemmas. Read both, everyone votes.
+
 export const WOULD_YOU_RATHER = [
   // Deck content is served from outside this repository.
 ];
 
-// Red Flag / Green Flag — read a trait aloud, group debates and shouts the verdict.
+
 export const RED_GREEN = [
   // Deck content is served from outside this repository.
 ];
 
-// Most Likely To — used by Emergency Meeting (voting game).
+
 export const MOST_LIKELY = [
   // Deck content is served from outside this repository.
 ];
 
-// Rizz Roulette — the unhinged, brain-rot party mode. Draw a card and do the thing:
-// deliver the rizz, spill the confession, commit to the dare, or defend the hot take.
+
 export const RIZZ_ROULETTE = [
   // Deck content is served from outside this repository.
 ];
 
+
 /* ============================================================
  * CARDS AGAINST THE FAMILY — edgy, silly, family-friction PG-13.
  * ============================================================ */
+
 export const FAMILY_PROMPTS = [
   // --- Silly / Cozy ---
   { text: "Mom's secret ingredient in her award-winning campfire chili is actually _.", pick: 1 },
-  { text: "Dad spent six hours in the hardware store looking for the perfect _.", pick: 1 },
+  { text: "My neighbor spent six hours in the hardware store looking for the perfect _.", pick: 1 },
   { text: "Mom grounded me for two weeks when she found _ hidden in the secret panel of our car.", pick: 1 },
-  { text: "Our dog ran away into the woods because he caught a glimpse of _.", pick: 1 },
+  { text: "The stray cat ran up a tree because it caught a glimpse of _.", pick: 1 },
   { text: "The local park ranger warned us to lock up our coolers because the bears have developed a taste for _.", pick: 1 },
-  { text: "My teacher didn't believe me when I told her my homework was destroyed by _.", pick: 1 },
+  { text: "My boss didn't believe me when I told them my report was destroyed by _.", pick: 1 },
   { text: "Instead of chores this weekend, dad surprised us by organizing a family contest of _.", pick: 1 },
   { text: "What's the absolute worst thing you could accidentally drop into the campfire?", pick: 1 },
-  { text: "Grandma's favorite cabin activity is sitting on the porch and complaining about _.", pick: 1 },
-  { text: "We knew the lake water was freezing when dad jumped in and screamed about _.", pick: 1 },
+  { text: "Grandma's favorite hobby is sitting on the porch and aggressively judging _.", pick: 1 },
+  { text: "We knew the pool water was freezing when my friend jumped in and screamed about _.", pick: 1 },
   { text: "First comes the smell of _, then comes the sound of _.", pick: 2 },
   { text: "I tried to build a custom treehouse using nothing but _ and _.", pick: 2 },
   { text: "Instead of clean laundry, my suitcase was completely filled with _ and _.", pick: 2 },
-  { text: "The ultimate campfire s'more contains two graham crackers, a toasted marshmallow, and a slice of _.", pick: 1 },
-  { text: "What did the fisherman accidentally reel in instead of a trout?", pick: 1 },
-  { text: "My sibling got grounded for a week because they tried to feed the raccoons _.", pick: 1 },
-  { text: "What is the secret cabin rule that nobody actually follows?", pick: 1 },
+  { text: "The ultimate gourmet sandwich contains artisan bread, fresh avocado, and a slice of _.", pick: 1 },
+  { text: "What did the vacuum cleaner accidentally suck up from under the couch?", pick: 1 },
+  { text: "My sibling got grounded for a week because they tried to hide _ in their pillowcase.", pick: 1 },
+  { text: "What is the secret workplace rule that absolutely nobody in the office follows?", pick: 1 },
 
-  // --- Edgy PG-13 Family Friction / Roasts ---
-  { text: "My sibling was grounded for two weeks after mom found _ hidden under their bed.", pick: 1 },
-  { text: "I knew my brother was lying about cleaning his room because I found _ in his closet.", pick: 1 },
+  // --- Edgy PG-13 General Friction / Roasts ---
+  { text: "My roommate was locked out of the apartment after I found _ hidden under their bed.", pick: 1 },
+  { text: "I knew my coworker was lying about finishing their tasks because I found _ in their drawer.", pick: 1 },
   { text: "Nothing ruins a peaceful family road trip faster than dad threatening to turn the car around because of _.", pick: 1 },
-  { text: "What is the real reason why my sister has been locked in the bathroom for three hours?", pick: 1 },
+  { text: "What is the real reason why my roommate has been locked in the bathroom for three hours?", pick: 1 },
   { text: "Chore evasion is an art. My sibling's ultimate masterpiece was avoiding unloading the dishwasher by pretending to suffer from _.", pick: 1 },
   { text: "Why does the family dog secretly love my sibling more than me?", pick: 1 },
-  { text: "Mom's strict kitchen rules are getting out of hand. Yesterday she literally banned _.", pick: 1 },
+  { text: "The office kitchen rules are getting out of hand. Yesterday they literally banned _.", pick: 1 },
   { text: "What is secretly inside mom's locked 'secret stash' drawer in the kitchen?", pick: 1 },
   { text: "Dad's famous 'special recipe' barbecue is just normal burgers covered in _.", pick: 1 },
-  { text: "I managed to escape setting the dinner table by creating a massive distraction involving _.", pick: 1 },
+  { text: "I managed to escape presenting at the meeting by creating a massive distraction involving _.", pick: 1 },
   { text: "The family group chat got completely silent after dad confidently messaged a photo of _.", pick: 1 },
-  { text: "My sibling's search history is completely filled with _ and _.", pick: 2 },
-  { text: "To survive a 10-hour family road trip, you need a high-tolerance for _ and a massive supply of _.", pick: 2 }
+  { text: "My roommate's search history is completely filled with _ and _.", pick: 2 },
+  { text: "To survive a 10-hour group road trip, you need a high-tolerance for _ and a massive supply of _.", pick: 2 }
 ];
+
 
 export const FAMILY_RESPONSES = [
   "✍️ [Write your own answer...]",
@@ -495,26 +498,26 @@ export const FAMILY_RESPONSES = [
   "a squirrel wearing tiny sunglasses",
   "wet socks that have been sitting in a bag for three days",
   "an absolute overload of maple syrup",
-  "a family board game that ends in an argument",
+  "a intense board game that ends in an argument",
   "a sketchy street vendor selling warm, unlabeled energy drinks",
   "accidentally eating a bug while riding a bicycle",
-  "dad's cheesy, laugh-at-his-own-jokes humor",
+  "my boss's cheesy, laugh-at-his-own-jokes humor",
   "an extremely muddy pair of boots",
   "trying to catch a frog with bare hands",
   "a massive pile of sticky pinecones",
-  "the absolute loudest snore in the cabin",
+  "the absolute loudest snore in the history of sleepovers",
   "stealing the last marshmallow from the bag",
   "a fish that looks like it's judging my life choices",
-  "accidentally dropping my phone in the lake",
+  "accidentally dropping my phone in the toilet bowl",
   "a mountain of unwashed beach towels",
-  "sleeping in a tent that has a tiny leak",
+  "sleeping in a room with a buzzing mosquito",
   "an army of very polite ants",
   "a soggy peanut butter and jelly sandwich",
-  "trying to skip a flat stone but splashing myself",
+  "trying to look cool while waving at someone who was actually waving at the person behind me",
   "a cooler full of nothing but broccoli",
   "mom's famous burnt hot dogs",
   "a mosquito that just won't leave me alone",
-  "singing campfire songs completely out of tune",
+  "singing shower songs completely out of tune at 2 a.m.",
   "a very confused duck in a life jacket",
   "wearing my shirt inside out all day without realizing",
   "a massive splash from a clumsy cannonball jump",
@@ -524,26 +527,28 @@ export const FAMILY_RESPONSES = [
   "an entire day spent entirely in wet swimsuits",
   "bootleg Elmo in an alleyway surrounded by mysterious cloudy gas",
 
-  // --- Edgy PG-13 Family Additions ---
-  "mom's highly classified snack stash",
+  // --- General Additions ---
+  "my coworker's highly classified snack stash",
   "a deeply concerning, unwashed heap of gym clothes",
   "my sibling's questionable browser history",
   "accidentally calling the teacher 'Mom'",
-  "chore evasion tactics that actually worked",
-  "pretending to be asleep to avoid unloading the dishwasher",
-  "an incredibly dramatic teenage tantrum",
+  "work evasion tactics that actually worked",
+  "pretending to be asleep to avoid unloading the car",
+  "an incredibly dramatic office meltdown",
   "wearing the same socks for four days straight",
   "blaming the dog for a mysterious smell in the living room",
   "my sister's 10-hour beauty routine",
-  "dad trying to use modern slang and failing miserably",
+  "my supervisor trying to use modern slang and failing miserably",
   "the terrifying moment mom calls you by your full middle name",
   "stealing my sibling's phone charger out of their wall",
-  "doing the absolute bare minimum to clean my room"
+  "doing the absolute bare minimum to clean my desk"
 ];
+
 
 export const CAMPFIRE_ROASTS = [
   // Deck content is served from outside this repository.
 ];
+
 
 export const SIBLING_RIVALRY = CAMPFIRE_ROASTS;
 export const FAMILY_ROASTS = CAMPFIRE_ROASTS;
@@ -554,49 +559,23 @@ export const BLANK_SLATE_PROMPTS = [
   "_____ HOUSE",
   "_____ BOARD",
   "_____ WATER",
-  "CAMP _____",
-  "DEEP _____",
-  "_____ FEVER",
-  "_____ CAKE",
-  "HOT _____",
-  "SWEET _____",
-  "_____ BALL",
-  "_____ DAY",
-  "_____ DOG",
-  "FIRE _____",
-  "_____ CARD",
-  "_____ GAME",
-  "LAKE _____",
-  "_____ ROOM",
-  "_____ LAND",
-  "_____ TIME",
-  "_____ BOOK",
-  "_____ FLY",
   "_____ LIGHT",
-  "_____ SHINE",
-  "_____ CHIPS",
-  "CABIN _____",
-  "WOOD _____",
-  "_____ STONE",
-  "_____ ROCK",
-  "_____ ROAD",
-  "_____ WALK",
+  "DEEP _____",
+  "_____ DOCK",
+  "SWEET _____",
+  "_____ GAME",
+  "_____ TRIP",
+  "SOFT _____",
   "_____ FIRE",
-  "_____ COAT",
-  "_____ HEART",
-  "_____ ICE",
-  "_____ SNOW",
-  "_____ WIND",
-  "_____ SEA",
-  "_____ FISH",
-  "_____ MOUNTAIN",
-  "_____ BEAST",
-  "_____ STAR",
+  "HIGH _____",
   "_____ MOON",
-  "_____ SKY",
-  "_____ TREE",
-  "_____ BIRD",
-  "_____ CAT",
-  "_____ BEAR",
-  "_____ BOAT"
+  "_____ NIGHT",
+  "_____ SHORE",
+  "WILD _____",
+  "_____ PATH",
+  "_____ STORM",
+  "_____ BREEZE",
+  "_____ CABIN",
+  "_____ BOAT",
+  "LAKE _____"
 ];
