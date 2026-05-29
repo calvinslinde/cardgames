@@ -250,6 +250,184 @@ export const LAKE_TRUTHS = [
   { type: "Most Likely To", text: "Who's most likely to 'just check work email' on vacation?" },
 ];
 
+// Clean / Cozy cabin-themed Would You Rather cards.
+export const COZY_WOULD_YOU_RATHER = [
+  { tag: "Would You Rather", text: "Spend the whole weekend with no Wi-Fi, or no hot water?" },
+  { tag: "Would You Rather", text: "Fall off the dock fully clothed, or get caught singing to yourself in the kayak?" },
+  { tag: "Would You Rather", text: "Share a bunk bed with a loud snorer, or a sleep-talker who narrates their dreams?" },
+  { tag: "Would You Rather", text: "Always be the one who packs the snacks, or always be the one who drives?" },
+  { tag: "Would You Rather", text: "Swim across the whole lake, or run the entire shoreline trail?" },
+  { tag: "Would You Rather", text: "Win every card game but lose every fishing contest, or vice versa?" },
+  { tag: "Would You Rather", text: "Have a camping tent that has a tiny, constant leak, or have to sleep in the car?" },
+  { tag: "Would You Rather", text: "Only eat burnt campfire hot dogs for a week, or only raw carrots?" },
+  { tag: "Would You Rather", text: "Be visited by a very polite black bear, or an army of very rude raccoons?" },
+  { tag: "Would You Rather", text: "Accidentally drop your phone into the outhouse toilet, or drop it into the deep lake?" },
+  { tag: "Would You Rather", text: "Have to paddle a canoe alone with a windy headwind, or carry a heavy cooler up a steep hill?" },
+  { tag: "Would You Rather", text: "Wear a wet swimsuit all day, or wear shoes completely filled with sand?" },
+  { tag: "Would You Rather", text: "Be the designated campfire starter every single night, or the designated dish cleaner?" },
+  { tag: "Would You Rather", text: "Get covered in sticky tree sap, or get bitten by 15 mosquitoes?" },
+  { tag: "Would You Rather", text: "Accidentally splash yourself skip-stone hunting, or slip on a muddy dock?" },
+  { tag: "Would You Rather", text: "Have a resident goose follow you everywhere, or a highly talkative squirrel?" },
+  { tag: "Would You Rather", text: "Eat a s'more that is 90% charred black soot, or a s'more with completely cold chocolate?" },
+  { tag: "Would You Rather", text: "Listen to someone play a three-chord song on an out-of-tune guitar for 3 hours, or sit in silence in the dark?" },
+  { tag: "Would You Rather", text: "Be the first person to wake up at 5 a.m. to make coffee, or sleep in until noon and miss the boat trip?" },
+  { tag: "Would You Rather", text: "Get stuck on the lake with no paddle, or get stuck in the woods with no map?" },
+  { tag: "Would You Rather", text: "Only communicate in campfire smoke signals for a day, or in loud loon calls?" },
+  { tag: "Would You Rather", text: "Have to wear mismatched, extremely bright neon socks the whole trip, or a floppy giant sun hat?" },
+  { tag: "Would You Rather", text: "Be the champion at backyard cornhole but lose every board game, or vice versa?" },
+  { tag: "Would You Rather", text: "Have a bedroom that smells like wet dog, or a bedroom that smells like burnt wood?" },
+  { tag: "Would You Rather", text: "Accidentally reel in a smelly old boot, or reel in a giant clump of lake weeds after a 20-minute fight?" }
+];
+
+// Clean / Cozy cabin-themed Most Likely To cards.
+export const COZY_MOST_LIKELY = [
+  "fall asleep in the hammock and miss dinner entirely",
+  "start an extremely competitive feud over a simple board game",
+  "befriend the lake's resident goose and name it",
+  "secretly check their work email within 10 minutes of arriving",
+  "burn their marshmallow until it is a charred black coal and eat it anyway",
+  "spend three hours trying to skip the perfect stone",
+  "worry about a bear invasion after hearing a tiny pinecone fall",
+  "pack enough clothes for a six-month expedition for a weekend trip",
+  "insist on driving the boat but immediately get stuck in the weeds",
+  "accidentally drop their sunglasses into the deepest part of the lake",
+  "wear their swimsuit inside out half the day without realizing",
+  "get completely lost walking on a clearly marked nature trail",
+  "spend the entire day reading on the porch and accomplish nothing else",
+  "accidentally splash the entire dock while attempting a cannonball jump",
+  "bring a highly elaborate, multi-step gourmet recipe to a simple cabin kitchen",
+  "complain about the lack of air conditioning within five minutes",
+  "get caught secretly stealing the last premium chocolate bar from the s'mores bag",
+  "take a 2-hour nap in the afternoon and complain they are still frustrated",
+  "insist on waking up at 5 a.m. to see the misty lake sunrise alone",
+  "try to start the campfire using a highly complex and unnecessary technique",
+  "wear a giant, floppy sun hat that constantly gets blown into the water",
+  "get a minor sunburn on their nose because they refused to wear sunscreen",
+  "try to catch a frog with their bare hands and slip in the mud",
+  "pack only salty snacks and completely forget to bring drinking water",
+  "be the one who suggests playing just one more card game at 2 a.m."
+];
+
+// Clean / Cozy cabin-themed Red Flag / Green Flag traits.
+export const COZY_RED_GREEN = [
+  { tag: "Red or Green?", text: "They pack extra dry socks for everyone else on the hiking trip." },
+  { tag: "Red or Green?", text: "Refuses to eat campfire food unless they can cover it in hot sauce." },
+  { tag: "Red or Green?", text: "Checks their work email on their phone while sitting in a kayak." },
+  { tag: "Red or Green?", text: "Takes a 45-minute hot shower when there is a queue of 6 people." },
+  { tag: "Red or Green?", text: "Wakes up at 5:30 a.m. and starts grinding fresh coffee beans loudly." },
+  { tag: "Red or Green?", text: "Doesn't wave back to other boaters passing on the lake." },
+  { tag: "Red or Green?", text: "Claims they 'know a shortcut' that adds three hours to the drive." },
+  { tag: "Red or Green?", text: "Packs three suitcases for a two-night stay at a rustic cabin." },
+  { tag: "Red or Green?", text: "Steals the perfect, slowly toasted marshmallow from your stick." },
+  { tag: "Red or Green?", text: "Spends the entire weekend playing games on their phone by the lake." },
+  { tag: "Red or Green?", text: "Insists on singing campfire songs completely out of tune." },
+  { tag: "Red or Green?", text: "Has a highly specific comfort spot on the porch and gets annoyed if you sit there." },
+  { tag: "Red or Green?", text: "Brings a cooler filled with nothing but high-end fancy cheeses." },
+  { tag: "Red or Green?", text: "Knows the exact scientific names of all the local birds and trees." },
+  { tag: "Red or Green?", text: "Volunteers to wash all the greasy dinner dishes without being asked." },
+  { tag: "Red or Green?", text: "Refuses to wear bug spray and complains about mosquitoes for three days." },
+  { tag: "Red or Green?", text: "Brings three different board games but refuses to play anyone else's choice." },
+  { tag: "Red or Green?", text: "Is extremely competitive during a casual backyard game of cornhole." },
+  { tag: "Red or Green?", text: "Leaves their wet towel crumpled on the bathroom floor instead of hanging it." },
+  { tag: "Red or Green?", text: "Always suggests going stargazing at 1 a.m. but falls asleep in 5 minutes." },
+  { tag: "Red or Green?", text: "Pretends to be asleep when the car arrives so they don't have to carry bags." },
+  { tag: "Red or Green?", text: "Can start a blazing campfire in the pouring rain using a single match." },
+  { tag: "Red or Green?", text: "Calls a small harmless spider in the bedroom an 'absolute emergency'." },
+  { tag: "Red or Green?", text: "Insists on sleeping in the hammock overnight and complains about a stiff neck." },
+  { tag: "Red or Green?", text: "Remembers to bring the extra long s'mores sticks so nobody burns their hands." }
+];
+
+// Clean / Cozy cabin-themed Roast Me prompts.
+export const COZY_CAMPFIRE_ROASTS = [
+  { tag: "Roast", text: "Point at the person who looks like they still sleep with a nightlight because of 'creepy cabin sounds'." },
+  { tag: "Roast", text: "Which player is absolutely incapable of starting a campfire without using a whole bottle of lighter fluid?" },
+  { tag: "Roast", text: "Point at the person who has a special, high-pitched voice they only use when talking to dogs or chipmunks." },
+  { tag: "Roast", text: "Which player would get completely lost inside a moderately sized grocery store?" },
+  { tag: "Roast", text: "Point at the player who behaves like a grumpy grizzly bear who missed their winter hibernation." },
+  { tag: "Roast", text: "Who in this room has the absolute worst posture when sitting in a hammock?" },
+  { tag: "Roast", text: "Point at the person who is most likely to get highly competitive and ruin a friendly family board game." },
+  { tag: "Roast", text: "Which player would be the absolute first to get eaten if a bear wandered onto the porch?" },
+  { tag: "Roast", text: "Point at the person who packs enough gear for a polar expedition just to go on a 20-minute nature walk." },
+  { tag: "Roast", text: "Who in this room has a laugh that sounds exactly like a startled loon on the lake?" },
+  { tag: "Roast", text: "Point at the player who is most likely to secretly eat the last chocolate bar from the s'mores supply." },
+  { tag: "Roast", text: "Which player looks like they still don't know how to properly skip a stone on the water?" },
+  { tag: "Roast", text: "Point at the person who takes a 2-hour afternoon nap and then complains they are too tired to help make dinner." },
+  { tag: "Roast", text: "Which player is most likely to get a severe sunburn on their nose because they were too stubborn for sunscreen?" },
+  { tag: "Roast", text: "Point at the player whose room is a disaster zone of wet towels and sandy shoes." },
+  { tag: "Roast", text: "Who in this room would spend two hours trying to catch a small frog, only to slip and fall in the mud?" },
+  { tag: "Roast", text: "Point at the person who is most likely to check their work email while sitting in a kayak." },
+  { tag: "Roast", text: "Which player is the absolute worst at steering a canoe, constantly going in circles?" },
+  { tag: "Roast", text: "Point at the player who gets completely terrified by a harmless tiny spider in the bathroom." },
+  { tag: "Roast", text: "Who in this room is most likely to fall asleep in a deck chair and get a highly awkward sun tan line?" },
+  { tag: "Roast", text: "Point at the person who always complains the cabin is 'too cold' and then 'too hot' within ten minutes." },
+  { tag: "Roast", text: "Which player is most likely to suggest playing just one more card game at 2 a.m. when everyone else is half-asleep?" },
+  { tag: "Roast", text: "Point at the person who looks like they would get startled by their own shadow on the cabin wall." },
+  { tag: "Roast", text: "Which player is most likely to accidentally drop their expensive phone directly into the lake while trying to take a selfie?" },
+  { tag: "Roast", text: "Point at the player who behaves like they are the king of the cabin but doesn't actually know how to wash a single dish." }
+];
+
+// Clean / Cozy cabin-themed Truth or Dare deck.
+export const COZY_TRUTHS_DARES = [
+  // --- TRUTHS ---
+  { tag: "Truth", text: "What is your secret comfort food that you only eat when nobody is looking?" },
+  { tag: "Truth", text: "Who is the most competitive person in this room when playing card games?" },
+  { tag: "Truth", text: "Have you ever secretly eaten the last snack and blamed it on someone else?" },
+  { tag: "Truth", text: "What is the worst advice you have ever confidently given to a friend?" },
+  { tag: "Truth", text: "If you could trade lives with anyone in this room for a day, who would it be and why?" },
+  { tag: "Truth", text: "What is the silliest fear you still have as an adult?" },
+  { tag: "Truth", text: "What is the cringiest fashion phase you ever went through?" },
+  { tag: "Truth", text: "Have you ever pretended to be asleep just to get out of doing a chore?" },
+  { tag: "Truth", text: "What is the most useless talent or party trick you can perform?" },
+  { tag: "Truth", text: "What was the most embarrassing nickname you had growing up?" },
+  { tag: "Truth", text: "Have you ever accidentally sent a text complaining about someone to that exact person?" },
+  { tag: "Truth", text: "What is the weirdest habit you have when you are completely alone?" },
+  { tag: "Truth", text: "Who in this room is the absolute worst driver?" },
+  { tag: "Truth", text: "What is a secret purchase you made recently that you haven't told anyone about?" },
+  { tag: "Truth", text: "What is the longest you have ever gone without showering on a camping trip?" },
+  { tag: "Truth", text: "If you were a ghost, which room in this house would you haunt and why?" },
+  { tag: "Truth", text: "What is the most embarrassing song on your playlist that you secretly love?" },
+  { tag: "Truth", text: "Have you ever lied about your age to get a discount or entry somewhere?" },
+  { tag: "Truth", text: "What is the most ridiculous excuse you've ever used to get out of plans?" },
+  { tag: "Truth", text: "If you were to start a rumor about yourself, what would it be?" },
+  { tag: "Truth", text: "What is the most childish thing you still do on a regular basis?" },
+  { tag: "Truth", text: "What's the most chaotic thing that's ever happened on a family trip?" },
+  { tag: "Truth", text: "Who in this group would survive longest stranded on the lake's tiny island?" },
+  { tag: "Truth", text: "What's your most embarrassing 'outdoorsy' fail?" },
+  { tag: "Truth", text: "If the cabin were haunted, whose fault would it be?" },
+
+  // --- DARES ---
+  { tag: "Dare", text: "Do your best loon call. Loudly. Right now." },
+  { tag: "Dare", text: "Narrate the next 60 seconds like a nature documentary." },
+  { tag: "Dare", text: "Give a dramatic toast to the lake as if you'll never see it again." },
+  { tag: "Dare", text: "Convince everyone you caught a fish 'this big' with a straight face." },
+  { tag: "Dare", text: "Try to balance a clean spoon on your nose for 15 seconds." },
+  { tag: "Dare", text: "Perform a 30-second dramatic slow-motion replay of a clumsy moment." },
+  { tag: "Dare", text: "Speak only in an enthusiastic radio host voice until your next turn." },
+  { tag: "Dare", text: "Do 10 pushups while shouting a positive compliment about the host with each rep." },
+  { tag: "Dare", text: "Allow the person to your left to style your hair in a ridiculous way." },
+  { tag: "Dare", text: "Stare at the person across from you and try to explain a complex hobby in 20 seconds without laughing or blinking." },
+  { tag: "Dare", text: "Do your absolute best impression of another player's signature laugh." },
+  { tag: "Dare", text: "Balance a water bottle on your head and walk in a circle without it falling." },
+  { tag: "Dare", text: "Do a 20-second interpretive dance about a kayak trip that goes horribly wrong." },
+  { tag: "Dare", text: "Try to make the person to your right laugh in 30 seconds using only funny faces." },
+  { tag: "Dare", text: "Give a 30-second passionate speech about why gas station snacks are gourmet food." },
+  { tag: "Dare", text: "Sing the chorus of your favorite song, but substitute every noun with the word 'canoe'." },
+  { tag: "Dare", text: "Do a 15-second plank while listing 5 things you love about the lake house." },
+  { tag: "Dare", text: "Stand on one foot with your eyes closed for 25 seconds without falling." },
+  { tag: "Dare", text: "Draw a tiny, goofy mustache on your finger with a pen and keep it there for the rest of the game." },
+  { tag: "Dare", text: "Try to recite the alphabet backward in 15 seconds. If you fail, do 5 jumping jacks." },
+  { tag: "Dare", text: "Act like a sleepy bear who just woke up from hibernation until your next turn." },
+  { tag: "Dare", text: "High-five everyone in the room, but you must do it in extreme slow motion." },
+  { tag: "Dare", text: "Try to balance a coaster on your chin for 10 seconds." },
+  { tag: "Dare", text: "Do your best impression of a campfire crackling and popping dramatically." },
+  { tag: "Dare", text: "Whisper all your responses until your next turn as if you are sharing a highly confidential secret." }
+];
+
+// Zesty / Suggestive adult-themed Truth or Dare deck.
+export const ZESTY_TRUTHS_DARES = [
+  // Deck content is served from outside this repository.
+];
+
 // Would You Rather: Unhinged — chronically-online dilemmas. Read both, everyone votes.
 export const WOULD_YOU_RATHER = [
   // Deck content is served from outside this repository.
