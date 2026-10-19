@@ -1,77 +1,46 @@
-# 🛶 Lake House Card Games
+# Lake House Card Games
 
-A cozy, lake-house themed **Progressive Web App** of party card games — installable,
-works fully offline, and built with zero dependencies (plain HTML/CSS/ES modules).
+A party-game web app for family and friends. It runs in the browser, installs on a phone's home screen, and works offline. Plain HTML, CSS, and JavaScript, with no dependencies.
 
-## Games
+**Play:** https://calvinslinde.github.io/cardgames/
 
-> The grown-up decks (Cards Against Monkeys, Zesty Would You Rather, Zesty Most Likely To,
-> Zesty Red Flag / Green Flag, Zesty Truth or Dare, Zesty Roasts, Rizz Roulette) are not stored
-> in this repository. The app downloads them once when they are unlocked and keeps a copy on
-> the device for offline play.
+## The games
 
-- **🐒 Cards Against Monkeys** *(18+)* — a chronically-online, brain-rot party game in the
-  *Cards Against Humanity* style. One player is the **Card Czar** each round; everyone else
-  fills in the blank from their hand, and the Czar crowns the funniest answer. Local
-  **pass-and-play** for 3–12 players, with secret-hand handoff screens, score tracking,
-  Pick-1 / Pick-2 prompts, and a configurable score-to-win. Games auto-save and can be resumed.
-- **🛖 Cards Against the Cabin** *(normal)* — the same fill-in-the-blank engine with a tamer
-  (still very adult) deck: dark, absurd, relatable humor with a lake-house lean.
-  **80 prompts + 86 response cards.**
+- **Cards Against the Cabin.** A fill-in-the-blank card game. One player judges each round and everyone else plays a card from their hand. Pass the device around, or let the app keep score while you play with real cards. Games save themselves and can be resumed.
+- **Emergency Meeting.** A secret-ballot voting game. The group gets a "who's most likely to" prompt, everyone votes by passing the device, and the most-voted player is out for the round.
+- **Draw-a-card decks:** would-you-rather, red flag or green flag, Lake House Truths.
 
-  > Both card games offer a pre-game **Card mode**: *Digital* (the app deals hands on the device
-  > and passes around) or *Physical cards* (you play with real cards — the app shows each prompt,
-  > runs the Card Czar rotation, and keeps score; just tap the round winner).
-- **🚨 Emergency Meeting** — a secret-ballot voting game. Each round the group gets a
-  *"who's most likely to…"* prompt; everyone votes by passing the device around, the
-  most-voted crewmate is **ejected**, and a running *sus-o-meter* crowns the Sussiest Baka.
-- **😏 Rizz Roulette** *(spicy)* — the unhinged party mode. Draw a card and do the thing:
-  deliver a rizz line straight-faced, spill a confession, commit to a dare, or defend an
-  unhinged hot take.
-- **🤔 Would You Rather (Unhinged)** — impossible, chronically-online dilemmas to argue over.
-- **🚩 Red Flag / Green Flag** — judge the most cursed personality traits and shout the verdict.
-- **🛶 Lake House Truths** — a relaxed draw-a-card deck of would-you-rather, truth, dare,
-  never-have-I-ever and most-likely-to prompts for around the firepit.
+Decks written for adults are not stored in this repository.
 
 ## Updates
 
-The app **auto-updates**: a service worker caches everything for offline play, and whenever a
-new version is deployed the client picks it up and silently reloads on the next launch. To ship
-an update, bump the version in **both** `js/version.js` and the `CACHE` constant in `sw.js`
-(keep them matched) — the visible version is shown in the home-screen footer.
+The app updates itself. A service worker caches everything for offline play, and a new version is picked up on the next launch. To ship an update, bump the version in both `js/version.js` and the `CACHE` constant in `sw.js`, and keep them matched.
 
-## Run locally
+## Run it locally
 
-It's a static site — serve the folder over HTTP (a service worker is required for offline,
-which doesn't run from `file://`):
+A service worker needs HTTP, so serve the folder:
 
-```bash
-python3 -m http.server 8000
-# then open http://localhost:8000
 ```
+python3 -m http.server 8000
+```
+
+Then open http://localhost:8000.
 
 ## Deploy
 
-Any static host works. For **GitHub Pages**: enable Pages on this branch/repo with the root
-folder as the source, then open the published URL on your phone and choose
-*Add to Home Screen* to install it.
+Any static host works. On GitHub Pages, publish the root folder, open the page on your phone, and choose Add to Home Screen.
 
-## Project layout
+## Layout
 
 ```
-index.html              app shell
-styles.css              lake-house theme
-manifest.webmanifest    PWA manifest
-sw.js                   service worker (offline cache)
-js/app.js               home menu + routing + PWA + auto-update wiring
-js/version.js           app version (bump on deploy)
-js/cam.js               Cards Against Monkeys game
-js/meeting.js           Emergency Meeting (voting game)
-js/deckgame.js          generic draw-a-card engine (WYR, Red/Green, Truths)
-js/data.js              all card content
-js/ui.js                shared DOM/util helpers
-icons/                  app icons (SVG + generated PNGs)
+index.html, styles.css          app shell and theme
+manifest.webmanifest, sw.js     install and offline cache
+js/app.js                       home menu, routing, and update wiring
+js/version.js                   app version (bump on deploy)
+js/cam.js                       the fill-in-the-blank game
+js/meeting.js                   Emergency Meeting
+js/deckgame.js                  the draw-a-card engine
+js/data.js                      card content
+js/ui.js                        shared helpers
+icons/                          app icons
 ```
-
-> Cards Against Monkeys contains adult, internet-meme humor. It's meant for grown-up friend
-> groups who are in on the joke.
