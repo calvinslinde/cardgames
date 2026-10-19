@@ -6,11 +6,14 @@ A party-game web app for family and friends. It runs in the browser, installs on
 
 ## The games
 
-- **Cards Against the Cabin.** A fill-in-the-blank card game. One player judges each round and everyone else plays a card from their hand. Pass the device around, or let the app keep score while you play with real cards. Games save themselves and can be resumed.
-- **Emergency Meeting.** A secret-ballot voting game. The group gets a "who's most likely to" prompt, everyone votes by passing the device, and the most-voted player is out for the round.
-- **Draw-a-card decks:** would-you-rather, red flag or green flag, Lake House Truths.
+Nineteen games in four groups, all playable on one phone passed around the table, and most of them online too:
 
-Decks written for adults are not stored in this repository.
+- **Cozy card games:** fill-in-the-blank prompts, anonymous voting, truths, dares, and campfire roasts.
+- **Creative and drawing:** sketch sharing, canvas guessers, round-robin book chains, and illustrated chronicles.
+- **Party words and action:** fast team word guessers, forehead actor screens, and wacky response vote-offs.
+- **Dice and scoreboards:** Farkle, Yahtzee, Liar's Dice, and a 3D dice roller.
+
+There are also online rooms you can rejoin by code, a game history, custom cards, a doodle gallery, and a TV mode that turns a second screen into the game monitor. Decks written for adults are not stored in this repository.
 
 ## Updates
 
