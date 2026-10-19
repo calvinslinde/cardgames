@@ -6,6 +6,7 @@ import * as meeting from "./meeting.js";
 import { makeGame as makeDeck } from "./deckgame.js";
 import { PROMPTS, RESPONSES, NORMAL_PROMPTS, NORMAL_RESPONSES, FAMILY_PROMPTS, FAMILY_RESPONSES, CAMPFIRE_ROASTS, LAKE_TRUTHS, WOULD_YOU_RATHER, MOST_LIKELY, RED_GREEN, RIZZ_ROULETTE, COZY_WOULD_YOU_RATHER, COZY_MOST_LIKELY, COZY_RED_GREEN, COZY_CAMPFIRE_ROASTS, COZY_TRUTHS_DARES, ZESTY_TRUTHS_DARES } from "./data.js";
 import { openCustomCardsManager } from "./custom_cards_ui.js";
+import { ensureZestyDecks } from "./zesty_decks.js";
 import * as catchphrase from "./catchphrase.js";
 import { pullFromCloud } from "./cloud_sync.js";
 import * as gartic from "./gartic.js";
@@ -32,14 +33,22 @@ pullFromCloud();
 
 let deferredInstall = null;
 
-const monkeys = makeCardGame({
+// The Zesty decks are not stored in this repository. They are downloaded once
+// (then kept on the device) the first time a Zesty game starts.
+const zesty = (start) => async (home) => {
+  const ok = await ensureZestyDecks();
+  if (!ok) { toast("Connect to the internet once to download the Zesty decks."); return; }
+  return start(home);
+};
+
+const monkeys = zesty(makeCardGame({
   title: "Cards Against Monkeys", icon: icons.monkeys,
   prompts: PROMPTS, responses: RESPONSES,
   winnerTitle: "Goon Commander",
   blurb: "A chronically-online party game. One player is the Card Czar each round; everyone else fills in the blank with their funniest card. The Czar picks the winner. Pass the device around — hands stay secret.",
   footer: "Chronically online humor. Best with friends who can take a joke.",
   saveKey: "cam.game.v1", namesKey: "cam.names.v1", targetKey: "cam.target", physicalKey: "cam.physical",
-});
+}));
 
 const combinedCabinPrompts = [...NORMAL_PROMPTS, ...FAMILY_PROMPTS];
 const combinedCabinResponses = [
@@ -56,17 +65,17 @@ const cabin = makeCardGame({
   footer: "Absurd, witty, and cozy card-game humor.",
   saveKey: "cabin.game.v1", namesKey: "cabin.names.v1", targetKey: "cabin.target", physicalKey: "cabin.physical",
 });
-const rizzRoulette = makeDeck({ title: "Rizz Roulette", source: RIZZ_ROULETTE, saveKey: "rizz.game.v1" });
+const rizzRoulette = zesty(makeDeck({ title: "Rizz Roulette", source: RIZZ_ROULETTE, saveKey: "rizz.game.v1" }));
 const cozyWouldYouRather = makeDeck({ title: "Cabin Would You Rather", source: COZY_WOULD_YOU_RATHER, saveKey: "cabin_wyr.game.v1" });
-const zestyWouldYouRather = makeDeck({ title: "Zesty Would You Rather", source: WOULD_YOU_RATHER, saveKey: "wyr.game.v1" });
+const zestyWouldYouRather = zesty(makeDeck({ title: "Zesty Would You Rather", source: WOULD_YOU_RATHER, saveKey: "wyr.game.v1" }));
 const cozyRedGreen = makeDeck({ title: "Cabin Red Flag / Green Flag", source: COZY_RED_GREEN, saveKey: "cabin_flags.game.v1" });
-const zestyRedGreen = makeDeck({ title: "Zesty Red Flag / Green Flag", source: RED_GREEN, saveKey: "flags.game.v1" });
+const zestyRedGreen = zesty(makeDeck({ title: "Zesty Red Flag / Green Flag", source: RED_GREEN, saveKey: "flags.game.v1" }));
 const cozyTruths = makeDeck({ title: "Truth or Dare", source: COZY_TRUTHS_DARES, saveKey: "truths.game.v1" });
-const zestyTruths = makeDeck({ title: "Zesty Truth or Dare", source: ZESTY_TRUTHS_DARES, saveKey: "zesty_truths.game.v1" });
+const zestyTruths = zesty(makeDeck({ title: "Zesty Truth or Dare", source: ZESTY_TRUTHS_DARES, saveKey: "zesty_truths.game.v1" }));
 const cozyRoasts = makeDeck({ title: "Cabin Roasts", source: COZY_CAMPFIRE_ROASTS, saveKey: "cabin_roasts.game.v1" });
-const zestyRoasts = makeDeck({ title: "Zesty Roasts", source: CAMPFIRE_ROASTS, saveKey: "roasts.game.v1" });
+const zestyRoasts = zesty(makeDeck({ title: "Zesty Roasts", source: CAMPFIRE_ROASTS, saveKey: "roasts.game.v1" }));
 const cozyMeeting = meeting.makeGame({ title: "Cabin Most Likely To", source: COZY_MOST_LIKELY, saveKey: "cabin_meeting.game.v1" });
-const zestyMeeting = meeting.makeGame({ title: "Zesty Most Likely To", source: MOST_LIKELY, saveKey: "meeting.game.v1" });
+const zestyMeeting = zesty(meeting.makeGame({ title: "Zesty Most Likely To", source: MOST_LIKELY, saveKey: "meeting.game.v1" }));
 
 
 const GAME_STARTERS = {
@@ -858,6 +867,7 @@ function home() {
         if (answer.trim().toLowerCase() === "monkeys") {
           const nowUnlocked = !weirdUnlocked;
           localStorage.setItem("lakehouse.weird_unlocked", String(nowUnlocked));
+          if (nowUnlocked) ensureZestyDecks();
           if (nowUnlocked) {
             toast("Sus & Chronically Online modes unlocked!");
           } else {

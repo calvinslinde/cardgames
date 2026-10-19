@@ -5,12 +5,16 @@ works fully offline, and built with zero dependencies (plain HTML/CSS/ES modules
 
 ## Games
 
+> The grown-up decks (Cards Against Monkeys, Zesty Would You Rather, Zesty Most Likely To,
+> Zesty Red Flag / Green Flag, Zesty Truth or Dare, Zesty Roasts, Rizz Roulette) are not stored
+> in this repository. The app downloads them once when they are unlocked and keeps a copy on
+> the device for offline play.
+
 - **🐒 Cards Against Monkeys** *(18+)* — a chronically-online, brain-rot party game in the
   *Cards Against Humanity* style. One player is the **Card Czar** each round; everyone else
   fills in the blank from their hand, and the Czar crowns the funniest answer. Local
   **pass-and-play** for 3–12 players, with secret-hand handoff screens, score tracking,
-  Pick-1 / Pick-2 prompts, and a configurable score-to-win. The **max-sus / brain-rot** deck:
-  **38 prompts + 121 response cards.** Games auto-save and can be resumed.
+  Pick-1 / Pick-2 prompts, and a configurable score-to-win. Games auto-save and can be resumed.
 - **🛖 Cards Against the Cabin** *(normal)* — the same fill-in-the-blank engine with a tamer
   (still very adult) deck: dark, absurd, relatable humor with a lake-house lean.
   **80 prompts + 86 response cards.**
